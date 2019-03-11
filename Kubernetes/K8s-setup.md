@@ -18,8 +18,9 @@
     chmod +x ./kubectl
     sudo mv ./kubectl /usr/local/bin/kubectl
    ```
-1. Create an IAM user with Route53, EC2, IAM and S3 full access
-1. Setup IAM programatic access to on Ubuntu server
+1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access
+
+#### Note: If you create IAM user with programmatic  access to on Ubuntu server
    ```sh 
      aws configure
     ```
@@ -42,7 +43,7 @@
    ```sh
     ssh-keygen
    ```
-1. Create kubernetes cluster defenations on S3 bucket 
+1. Create kubernetes cluster definitions on S3 bucket 
    ```sh 
     kops create cluster --cloud=aws --zones=ap-southeast-1b --name=southeast.k8s.valaxy.in --dns-zone=valaxy.in --dns private
     ```
