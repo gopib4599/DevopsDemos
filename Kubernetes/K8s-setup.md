@@ -29,7 +29,7 @@
     chmod +x kops-linux-amd64
     sudo mv kops-linux-amd64 /usr/local/bin/kops
     ```
-1. Create a Route53 private hosted zone ( you can create Public hosted zone if you have a domain)
+1. Create a Route53 private hosted zone (you can create Public hosted zone if you have a domain)
 1. create an S3 bucket 
    ```sh
     aws s3 mb s3://cluster.k8s.valaxy.in
