@@ -18,7 +18,7 @@
     chmod +x ./kubectl
     sudo mv ./kubectl /usr/local/bin/kubectl
    ```
-1. Create an IAM user with Route53, EC2 and S3 full access
+1. Create an IAM user with Route53, EC2, IAM and S3 full access
 1. Setup IAM programatic access to on Ubuntu server
    ```sh 
      aws configure
